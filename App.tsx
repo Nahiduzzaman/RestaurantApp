@@ -19,7 +19,9 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import FavoritesScreen from './screens/FavouritesScreen';
 import { LogBox, StatusBar } from 'react-native';
 import MealDetailScreen from './screens/MealDetailScreen';
-import FavouritesContextProvider from './store/context/context';
+// import FavouritesContextProvider from './store/context/context';
+import { Provider } from 'react-redux';
+import { store } from './store/redux/store';
 
 LogBox.ignoreLogs([
   "[react-native-gesture-handler] Seems like you\'re using an old API with gesture components, check out new Gestures system!",
@@ -58,7 +60,8 @@ const App = () => {
 
   return (
     <>
-      <FavouritesContextProvider>
+      {/* <FavouritesContextProvider> */}
+      <Provider store={store}>
         <NavigationContainer>
           <Stack.Navigator
             screenOptions={{
@@ -84,7 +87,8 @@ const App = () => {
             />
           </Stack.Navigator>
         </NavigationContainer>
-      </FavouritesContextProvider>
+      </Provider>
+      {/* </FavouritesContextProvider> */}
     </>
   );
 };
