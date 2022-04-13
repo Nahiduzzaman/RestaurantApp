@@ -6,7 +6,7 @@ import MealDetails from '../app-shared/meal-details.components';
 import Subtitle from './components/subtitle/subtitle.component';
 import { MEALS } from '../../mock/dummy-data';
 import { FavouritesContext } from '../../context/context';
-import styles from './app-meal-detail.style';
+import {styles} from './app-meal-detail.style';
 
 function MealDetailScreen({ route, navigation }: any) {
   const favoriteCtx = useContext(FavouritesContext);

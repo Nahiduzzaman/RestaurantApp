@@ -1,6 +1,6 @@
 import { Pressable, View, Text, StyleSheet, Platform } from 'react-native';
 import React from 'react';
-import styles from './category-grid-tile.style'
+import {styles} from './category-grid-tile.style'
 
 function CategoryGridTile({ title, color, onPress }: any) {
   return (

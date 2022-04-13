@@ -1,7 +1,7 @@
-import { Pressable, View, Text, StyleSheet, Platform } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
     gridItem: {
       flex: 1,
       margin: 16,
@@ -33,5 +33,3 @@ const styles = StyleSheet.create({
       fontSize: 18,
     },
   });
-
-export default styles

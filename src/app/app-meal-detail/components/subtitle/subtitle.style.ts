@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
     subtitle: {
       color: '#e2b497',
       fontSize: 18,
@@ -15,5 +15,3 @@ const styles = StyleSheet.create({
       borderBottomWidth: 2,
     },
   });
-
-  export default styles

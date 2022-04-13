@@ -1,7 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
     rootContainer: {
       marginBottom: 32,
     },
@@ -32,5 +32,3 @@ const styles = StyleSheet.create({
       color: 'white'
     }
   });
-
-  export default styles

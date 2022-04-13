@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native';
 import React from 'react';
-import styles from './subtitle.style';
+import {styles} from './subtitle.style';
 
 function Subtitle({children}:any) {
   return (
