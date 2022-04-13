@@ -1,6 +1,6 @@
 import React from "react";
 import { View, FlatList, StyleSheet } from "react-native";
-import MealItem from "../MealItem";
+import MealItem from "./meal-item.component";
 
 function MealList({items}:any) {
     function renderMealItem(itemData:any) {

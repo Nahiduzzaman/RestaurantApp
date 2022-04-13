@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLayoutEffect } from 'react';
-import { MEALS, CATEGORIES } from '../data/dummy-data';
-import MealList from '../components/MealsList/MealList';
+import { MEALS, CATEGORIES } from '../../mock/dummy-data';
+import MealList from '../app-shared/meal-list.component';
 
 function MealsOverviewScreen({ route, navigation }: any) {
   const catId = route.params.categoryId;

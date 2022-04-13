@@ -13,13 +13,13 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
-import CategoriesScreen from './screens/CatagoriesScreen';
-import MealsOverviewScreen from './screens/MealsOverviewScreen';
+import CategoriesScreen from '../app/app-categories/categories.app';
+import MealsOverviewScreen from '../app/app-meal-overview/meal-overview.app';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import FavoritesScreen from './screens/FavouritesScreen';
-import { LogBox, StatusBar } from 'react-native';
-import MealDetailScreen from './screens/MealDetailScreen';
-import FavouritesContextProvider from './store/context/context';
+import FavoritesScreen from '../app/app-favourites/favourites.app';
+import { LogBox, StatusBar, Text } from 'react-native';
+import MealDetailScreen from '../app/app-meal-detail/meal-detail.app';
+import FavouritesContextProvider from '../context/context';
 
 LogBox.ignoreLogs([
   "[react-native-gesture-handler] Seems like you\'re using an old API with gesture components, check out new Gestures system!",

@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import MealList from '../components/MealsList/MealList';
-import { MEALS } from '../data/dummy-data';
-import { FavouritesContext } from '../store/context/context';
+import MealList from '../app-shared/meal-list.component';
+import { MEALS } from '../../mock/dummy-data';
+import { FavouritesContext } from '../../context/context';
 
 function FavoritesScreen() {
     const favoriteCtx = useContext(FavouritesContext);

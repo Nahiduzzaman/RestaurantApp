@@ -1,11 +1,12 @@
 import React, { useContext, useLayoutEffect } from 'react';
-import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
-import List from '../components/List';
+import { View, Text, Image, ScrollView } from 'react-native';
+import List from '../app-shared/meal-list.component';
 
-import MealDetails from '../components/MealDetails';
-import Subtitle from '../components/Subtitle';
-import { MEALS } from '../data/dummy-data';
-import { FavouritesContext } from '../store/context/context';
+import MealDetails from '../app-shared/meal-details.components';
+import Subtitle from './components/subtitle/subtitle.component';
+import { MEALS } from '../../mock/dummy-data';
+import { FavouritesContext } from '../../context/context';
+import styles from './app-meal-detail.style';
 
 function MealDetailScreen({ route, navigation }: any) {
   const favoriteCtx = useContext(FavouritesContext);
@@ -59,35 +60,4 @@ function MealDetailScreen({ route, navigation }: any) {
 
 export default MealDetailScreen;
 
-const styles = StyleSheet.create({
-  rootContainer: {
-    marginBottom: 32,
-  },
-  image: {
-    width: '100%',
-    height: 350,
-  },
-  title: {
-    fontWeight: 'bold',
-    fontSize: 24,
-    margin: 8,
-    textAlign: 'center',
-    color: 'white',
-  },
-  detailText: {
-    color: 'white',
-  },
-  listOuterContainer: {
-    alignItems: 'center',
-  },
-  listContainer: {
-    width: '80%',
-  },
-  iconColorBlack: {
-    color: 'black'
-  },
-  iconColorWhite: {
-    color: 'white'
-  }
-});
 
